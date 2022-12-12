@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <h2>Reach Out Now...</h2>
+
+    <form action="mailto:ezajah.albo@ucdenver.edu">
+      <label for="fname">Your Full Name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Jane Doe"
+        pattern="^.* .*$"
+        value=""
+        required
+      /><br /><br />
+      <label for="lname">Email Address:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="example@email.com"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        required
+      /><br /><br />
+      <label for="pnumber">Phone Number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      /><br /><br />
+      <label for="cpreference">Communication Preference:</label><br />
+      <select name="cpreference" id="cpreference" required>
+        <option
+          selected
+          disabled
+          hidden
+          style="display: none"
+          value=""
+        ></option>
+        <option value="email">email</option>
+        <option value="phone number">phone number</option>
+        <option value="eone">doesn't matter</option></select
+      ><br /><br />
+      <label for="comments">Comments and Questions:</label><br />
+      <textarea
+        name="comments"
+        rows="12"
+        placeholder="Leave your comments and questions here."
+        cols="50"
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <p>
+      Click the "Submit" button once done, this will be sent directly to Ezajah
+      Albo.
+    </p>
+    <br />
+    <br />
+    <img src="images/thanks.png" class="thanks" alt="thanks logo" />
+  </body>
+</html>
